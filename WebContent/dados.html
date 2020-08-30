@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Dados </title>
+</head>
+<body>
+
+		 <form action="http://localhost:8282/FormServlet/ServletsExercicio" method="post">
+		    <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite o seu Nome..."  autocomplete="on" required><br>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Digite o seu Telefone..." required maxlength="9" ><br>
+            <label for="cpf">Cpf:</label>
+            <input type="text" id="cpf" name="cpf" placeholder="Digite o seu cpf..." required><br>
+            <label for="salario">Salario:</label>
+            <input type="text" id="salario" name="salario" placeholder="Digite o seu salario..." required maxlength="9"><br>
+            <button type="submit" value="Enviar" name="enviar">Enviar</button><br>
+        </form>
+</body>
+</html>
