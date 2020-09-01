@@ -37,7 +37,7 @@ public class ServletsExercicio extends HttpServlet {
 		String nome = request.getParameter("nome");
 		String cpf = request.getParameter("cpf");
 		String telefone = request.getParameter("telefone");
-		double salario = Double.parseDouble(request.getParameter("salario"));
+		double salario = Double.parseDouble(request.getParameter("salario").replaceAll("," , "."));
 		
 		
 		if (util.validarCPF(cpf) == true) {
